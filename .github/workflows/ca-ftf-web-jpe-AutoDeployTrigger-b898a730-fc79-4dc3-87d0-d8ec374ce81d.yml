@@ -36,7 +36,7 @@ jobs:
         with:
           appSourcePath: ${{ github.workspace }}
           _dockerfilePathKey_: ./Dockerfile
-          _targetLabelKey_: _targetLabel_
+          _targetLabelKey_: ftf-web
           registryUrl: crftfdeliveriesjpe.azurecr.io
           registryUsername: ${{ secrets.CAFTFWEBJPE_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.CAFTFWEBJPE_REGISTRY_PASSWORD }}
