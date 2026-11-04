@@ -35,8 +35,7 @@ jobs:
         uses: azure/container-apps-deploy-action@v2
         with:
           appSourcePath: ${{ github.workspace }}
-          _dockerfilePathKey_: ./Dockerfile
-          _targetLabelKey_: ftf-web
+          _dockerfilePathKey_: ./Dockerfile
           registryUrl: crftfdeliveriesjpe.azurecr.io
           registryUsername: ${{ secrets.CAFTFWEBJPE_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.CAFTFWEBJPE_REGISTRY_PASSWORD }}
